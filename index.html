@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Drench Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="index.js"></script>
+</head>
+<body>
+    
+    <h1>Drench Game</h1>
+
+    <div class="box-border">
+        <h2>Use the buttons to change the colors until it's drenched with a single color.</h2>
+
+        <div class="game-border">
+        <div class="drench-game" id="drenchgame">
+        </div>
+       
+        <div class="scoreBoard">
+            <div class="movesBox">
+                <div class="numberMoves">30</div>Moves Left!</div>
+          
+            <div class="buttonBox">
+                <div class="row1">
+                    <button id="b1" class="button"></button>
+                    <button id="b2" class="button"></button>
+                    <button id="b3" class="button"></button>
+                </div>
+                
+                <div class="row2">
+                    <button id="b4" class="button"></button>
+                    <button id="b5" class="button"></button>
+                    <button id="b6" class="button"></button>
+                </div>
+            </div>
+                <button class="resetButton"><strong>RESET</strong></button>
+        </div>
+        </div>
+    </div>
+   <script> 
+    generateGrid(14, 14);
+    getRandomColor();
+   </script>
+</body>
+</html>
